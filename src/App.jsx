@@ -373,68 +373,270 @@ function App() {
       live: "#",
       github: "https://github.com/peter-omondi/bc-portal-connector",
     },
+    // {
+    //   id: 6,
+    //   title: "E-Citizen Integration Kit",
+    //   subtitle: "Government Payment Integration Library",
+    //   color: "#1d4ed8",
+    //   problem:
+    //     "Kenyan government service providers and private companies struggle to integrate with E-Citizen due to poorly documented APIs, lack of official SDKs, frequent undocumented changes, and inconsistent error handling. Each organization builds their integration from scratch, resulting in duplicated effort, security vulnerabilities, and maintenance headaches.",
+    //   solution:
+    //     "E-Citizen Integration Kit provides a production-tested, developer-friendly library that abstracts the complexity of E-Citizen integration. The kit handles all the challenging aspects: automatic token refresh and credential management, transaction state tracking, webhook signature validation with automated retries, and secure credential storage. Developers can integrate with E-Citizen in minutes using the fluent API, with comprehensive documentation and code examples. The kit has been battle-tested in production across multiple government agencies and private companies, processing thousands of transactions reliably. It reduces integration effort by 90%, eliminates common security vulnerabilities, and provides standardized logging and monitoring for all E-Citizen interactions. Organizations can now focus on their core business while the kit handles the complexities of government payment integration.",
+    //   engineering: {
+    //     overview:
+    //       "A production-tested integration library that abstracts the complexity of E-Citizen integration, providing a clean, developer-friendly interface with automatic error handling and recovery.",
+    //     architecture: [
+    //       "ASP.NET Core library with fluent API design",
+    //       "State machine for transaction lifecycle management",
+    //       "Automatic token refresh and credential management",
+    //       "Circuit breaker pattern for handling API unavailability",
+    //       "Secure credential storage with Azure Key Vault integration",
+    //     ],
+    //     database: [
+    //       "Configuration-driven design with XML/JSON settings",
+    //       "Built-in logging with configurable persistence options",
+    //       "Transaction history with audit trail",
+    //     ],
+    //     security: [
+    //       "AES-256 encryption for API credentials",
+    //       "Secure token storage with automatic rotation",
+    //       "Signature validation for webhook callbacks",
+    //       "Audit logging for all API interactions",
+    //     ],
+    //     testing: [
+    //       "Unit tests with mocked E-Citizen endpoints",
+    //       "Integration tests with Pact contract testing",
+    //       "Load testing for high-volume scenarios",
+    //     ],
+    //     deployment: [
+    //       "NuGet package distribution",
+    //       "Docker support for containerized deployments",
+    //       "CI/CD with GitHub Actions",
+    //     ],
+    //     performance: [
+    //       "Connection pooling for high throughput",
+    //       "Asynchronous processing for webhook handling",
+    //       "Caching for frequently accessed data",
+    //     ],
+    //   },
+    //   features: [
+    //     "Minimal configuration (just API credentials and callback URLs)",
+    //     "Automatic token refresh and credential management",
+    //     "Transaction state management: Initiated → Pending → Success/Failed → Reversal",
+    //     "Idempotent request handling to prevent duplicates",
+    //     "Webhook signature validation with automatic retries",
+    //     "Comprehensive logging and monitoring",
+    //     "Circuit breaker for graceful degradation",
+    //     "Developer documentation with code examples",
+    //     "Quickstart templates for common integration scenarios",
+    //     "Production-proven in multiple government and private systems",
+    //   ],
+    //   tech: "ASP.NET Core 8 · Azure Key Vault · NuGet · Docker · GitHub Actions",
+    //   live: "#",
+    //   github: "https://github.com/peter-omondi/ecitizen-kit",
+    // },
     {
-      id: 6,
-      title: "E-Citizen Integration Kit",
-      subtitle: "Government Payment Integration Library",
-      color: "#1d4ed8",
-      problem:
-        "Kenyan government service providers and private companies struggle to integrate with E-Citizen due to poorly documented APIs, lack of official SDKs, frequent undocumented changes, and inconsistent error handling. Each organization builds their integration from scratch, resulting in duplicated effort, security vulnerabilities, and maintenance headaches.",
-      solution:
-        "E-Citizen Integration Kit provides a production-tested, developer-friendly library that abstracts the complexity of E-Citizen integration. The kit handles all the challenging aspects: automatic token refresh and credential management, transaction state tracking, webhook signature validation with automated retries, and secure credential storage. Developers can integrate with E-Citizen in minutes using the fluent API, with comprehensive documentation and code examples. The kit has been battle-tested in production across multiple government agencies and private companies, processing thousands of transactions reliably. It reduces integration effort by 90%, eliminates common security vulnerabilities, and provides standardized logging and monitoring for all E-Citizen interactions. Organizations can now focus on their core business while the kit handles the complexities of government payment integration.",
-      engineering: {
-        overview:
-          "A production-tested integration library that abstracts the complexity of E-Citizen integration, providing a clean, developer-friendly interface with automatic error handling and recovery.",
-        architecture: [
-          "ASP.NET Core library with fluent API design",
-          "State machine for transaction lifecycle management",
-          "Automatic token refresh and credential management",
-          "Circuit breaker pattern for handling API unavailability",
-          "Secure credential storage with Azure Key Vault integration",
-        ],
-        database: [
-          "Configuration-driven design with XML/JSON settings",
-          "Built-in logging with configurable persistence options",
-          "Transaction history with audit trail",
-        ],
-        security: [
-          "AES-256 encryption for API credentials",
-          "Secure token storage with automatic rotation",
-          "Signature validation for webhook callbacks",
-          "Audit logging for all API interactions",
-        ],
-        testing: [
-          "Unit tests with mocked E-Citizen endpoints",
-          "Integration tests with Pact contract testing",
-          "Load testing for high-volume scenarios",
-        ],
-        deployment: [
-          "NuGet package distribution",
-          "Docker support for containerized deployments",
-          "CI/CD with GitHub Actions",
-        ],
-        performance: [
-          "Connection pooling for high throughput",
-          "Asynchronous processing for webhook handling",
-          "Caching for frequently accessed data",
-        ],
-      },
-      features: [
-        "Minimal configuration (just API credentials and callback URLs)",
-        "Automatic token refresh and credential management",
-        "Transaction state management: Initiated → Pending → Success/Failed → Reversal",
-        "Idempotent request handling to prevent duplicates",
-        "Webhook signature validation with automatic retries",
-        "Comprehensive logging and monitoring",
-        "Circuit breaker for graceful degradation",
-        "Developer documentation with code examples",
-        "Quickstart templates for common integration scenarios",
-        "Production-proven in multiple government and private systems",
-      ],
-      tech: "ASP.NET Core 8 · Azure Key Vault · NuGet · Docker · GitHub Actions",
-      live: "#",
-      github: "https://github.com/peter-omondi/ecitizen-kit",
-    },
+  id: 6,
+
+  title: "Service Delivery Platform",
+
+  subtitle: "Multi-Service Digital Marketplace & Fulfillment Management System",
+
+  color: "#0f766e",
+
+  problem:
+
+  "Students and other customers often rely on fragmented, informal channels to access everyday services such as printing, laundry, groceries, transport, parcel handling, and emergency deliveries. Orders are coordinated through disconnected channels such as phone calls and WhatsApp, making it difficult to maintain order visibility, coordinate service providers and delivery personnel, track payments, calculate settlements, and provide a consistent customer experience. The absence of a centralized delivery and fulfillment system also makes operational monitoring, financial reconciliation, and customer support difficult as transaction volumes grow.",
+
+  solution:
+
+  "Service Delivery Platform is a centralized digital marketplace and fulfillment management system that enables customers to discover services and products, create orders, make payments, track fulfillment, receive notifications, and access invoices and receipts from a single platform. The system acts as an orchestration layer between customers, the organization, external service providers, delivery personnel, payment providers, and communication channels. It supports both services and physical products through a unified order model, while keeping payment, fulfillment, delivery, and settlement as independent but coordinated domains. Service-specific fulfillment workflows allow different offerings such as laundry, printing, groceries, transport, and parcel delivery to follow their own operational processes without compromising the core order architecture. The platform also introduces configurable pricing, distance- and service-based delivery charges, deposit-based payments, provider and delivery settlements, audit trails, customer support, and event-driven notifications. The architecture is designed for an initial single-campus deployment while allowing the organization to expand to multiple campuses or branches without fundamentally redesigning the platform.",
+
+  engineering: {
+
+    overview:
+
+    "A domain-oriented service delivery platform designed around independent order, payment, fulfillment, delivery, settlement, catalogue, and customer-support domains. The architecture separates commercial order state from financial payment state and operational fulfillment state, allowing complex real-world service workflows to be represented accurately and audited throughout their lifecycle.",
+
+    architecture: [
+
+      "Laravel-based modular application architecture organized around business domains",
+
+      "Service + product marketplace using a unified order and order-item model",
+
+      "Independent state machines for order, payment, fulfillment, and delivery lifecycles",
+
+      "Fulfillment architecture supporting service-specific workflows without coupling them to the core order lifecycle",
+
+      "Delivery domain supporting multiple physical movements per order, such as laundry pickup and subsequent customer delivery",
+
+      "Event-driven architecture for notifications, audit logging, and operational state changes",
+
+      "Payment abstraction layer supporting multiple payment providers such as M-Pesa and Paystack",
+
+      "Organization → Campus/Branch hierarchy designed for future multi-campus expansion",
+
+      "External service providers modeled as managed partners without requiring platform accounts in the initial release",
+
+      "Role-based architecture for customers, administrators, operational staff, and delivery personnel",
+
+    ],
+
+    database: [
+
+      "Normalized relational data model centered around customers, catalogues, orders, fulfillment, delivery, payments, and settlements",
+
+      "Order items supporting both services and physical products within a single order",
+
+      "Historical snapshots for pricing, delivery charges, and settlement percentages to preserve financial integrity",
+
+      "Separate payment transaction records supporting deposits, outstanding balances, failed transactions, refunds, and multiple payments per order",
+
+      "Order and fulfillment state-transition history for complete operational auditability",
+
+      "Customer delivery-location snapshots preserving the exact destination used for historical orders",
+
+      "Provider and delivery-person settlement records with payment references and settlement history",
+
+      "Document metadata and attachment management for services requiring customer uploads",
+
+    ],
+
+    security: [
+
+      "Role-based access control separating customer, administrator, operational, and delivery responsibilities",
+
+      "Policy-based authorization for sensitive order, payment, fulfillment, and settlement operations",
+
+      "Secure payment callback and webhook validation",
+
+      "Protection against duplicate payment and order processing through idempotent transaction handling",
+
+      "Audit logging for critical state, financial, administrative, and authorization events",
+
+      "Secure document upload validation and controlled file storage",
+
+      "Server-side validation of all customer and operational inputs",
+
+      "Separation of payment credentials and provider-specific implementation details from business logic",
+
+    ],
+
+    testing: [
+
+      "Unit tests for domain services, pricing calculations, delivery charges, payment states, and settlement calculations",
+
+      "Feature tests covering complete customer order journeys",
+
+      "Integration tests for payment-provider and notification integrations",
+
+      "State-transition tests preventing invalid order, payment, fulfillment, and delivery transitions",
+
+      "Authorization tests ensuring users can only perform actions permitted by their role",
+
+      "End-to-end tests for critical workflows such as order submission, payment, fulfillment, delivery, and completion",
+
+    ],
+
+    deployment: [
+
+      "Laravel application deployed on production web infrastructure",
+
+      "Environment-specific configuration for development, staging, and production",
+
+      "Queue-based background processing for notifications and asynchronous operations",
+
+      "Scheduled jobs for operational maintenance, reconciliation, and monitoring",
+
+      "CI/CD-ready architecture for automated testing and deployment",
+
+      "Production logging and monitoring for application, payment, and fulfillment events",
+
+    ],
+
+    performance: [
+
+      "Database indexing and optimized queries for high-frequency order and transaction operations",
+
+      "Asynchronous processing for notifications and non-blocking operational tasks",
+
+      "Caching for frequently accessed catalogue and configuration data",
+
+      "Pagination for order history, catalogue, reporting, and administrative datasets",
+
+      "Provider-agnostic integration layer preventing external API implementations from coupling directly to core order processing",
+
+      "Designed to scale from a single campus to multiple organizational branches",
+
+    ],
+
+  },
+
+  features: [
+
+    "Customer dashboard with total orders, total spending, active orders, completed orders, and support access",
+
+    "Unified marketplace for services and physical products",
+
+    "Service categories including E-Cyber, Laundry, Essentials, Transport, Parcels & Storage, and Emergency/Medicine Delivery",
+
+    "Multi-item orders containing different services and products",
+
+    "Configurable service and product pricing",
+
+    "Distance-based and service-based delivery pricing",
+
+    "Resident, non-resident, and designated pickup-point delivery locations",
+
+    "Order-specific location snapshots for historical accuracy",
+
+    "Full-payment and configurable deposit-payment models",
+
+    "Multiple payment transactions per order",
+
+    "M-Pesa and Paystack payment integration architecture",
+
+    "Independent order, payment, fulfillment, and delivery state management",
+
+    "Service-specific fulfillment workflows",
+
+    "Multi-stage delivery management supporting pickup and final delivery movements",
+
+    "Delivery-person assignment and operational tracking",
+
+    "External service-provider management and coordination",
+
+    "Manual provider and delivery-person settlement recording",
+
+    "Historical settlement snapshots preserving financial integrity",
+
+    "Invoices and payment receipts",
+
+    "Document uploads for services requiring customer files",
+
+    "Event-driven customer notifications",
+
+    "Customer order tracking and order history",
+
+    "Customer ratings and feedback",
+
+    "Customer support and order issue reporting",
+
+    "Comprehensive order and operational audit trails",
+
+    "Administrative catalogue, pricing, order, payment, provider, delivery, and settlement management",
+
+    "Architecture prepared for future multi-campus expansion",
+
+  ],
+
+  tech: "Laravel · PHP · MySQL · JavaScript · Bootstrap/Tailwind CSS · M-Pesa API · Paystack API · REST APIs · Queues · Events & Listeners · Role-Based Access Control",
+
+  live: "#",
+
+  github: "#",
+
+}
   ];
 
   const current = projects[activeProject];
