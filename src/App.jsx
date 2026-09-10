@@ -70,7 +70,7 @@ function App() {
       subtitle: "Student Lifestyle & Mental Health Blog",
       color: "#0e7490",
       problem:
-        "University students lack a trusted digital space for mental health resources, campus events, and lifestyle content. Existing platforms are either overly commercial, lack moderation, or are not optimized for mobile. Students need a curated, safe, and engaging community where they can find reliable information and connect with peers.",
+        "University students lack a trusted digital space for mental health resources, campus events, opportunities updates and lifestyle content. Existing platforms are either overly commercial, lack moderation, or are not optimized for mobile. Students need a curated, safe, and engaging community where they can find reliable information and connect with peers.",
       solution:
         "Freshaa creates a vibrant, student-focused digital ecosystem where mental health, lifestyle, and campus events are curated with care and authenticity. The platform combines expert-backed mental health resources with peer-shared experiences, creating a safe space for students to learn, share, and connect. Content is actively moderated to ensure quality and safety, with an approval workflow that maintains standards while allowing rapid publishing. The mobile-first design ensures seamless access from any device, with features like likes, comments, and bookmarks driving engagement. Students can discover content through powerful search and category filtering, while the admin dashboard enables efficient content management. The platform has become a trusted resource for thousands of students seeking reliable information and community support.",
       engineering: {
